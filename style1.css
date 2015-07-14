@@ -1,6 +1,12 @@
 body  {
-    background-image: url("paper.gif");
-    background-color: #dddddd;
+
+    /*background-color: #3D2A26;*/
+    border-color: lightblue;
+    border: 5px solid red;
+    border-radius: 25px;
+
+      margin: 0.25cm 1cm 1cm 1cm;
+
 }
 
 
@@ -9,28 +15,30 @@ body  {
     margin:  0 auto;
 }
 #questionID1, #questionID3, #questionID5,#questionID7, #questionID9{
-  background-color: yellow;
+  /*background-color: yellow;*/
+  border: 3px solid lightgreen;
   font-family: fantasy;
   text-align: center;
   width: 250px;
   height: 12em;
   margin:  0 auto;
   margin-bottom: 0.5cm;
-  border-radius: 25px;
+  border-radius: 120px;
     padding: 40px;
     display:inline-block;
 }
 
 
 #questionID2, #questionID4,#questionID6,#questionID8, #questionID10 {
-  background-color: lightgreen;
+  /*background-color: lightgreen;*/
+    border: 3px solid lightblue;
   font-family: fantasy;
   text-align: center;
   width: 250px;
   height: 12em;
   margin: 0 auto;
   margin-bottom: 0.5cm;
-  border-radius: 25px;
+  border-radius: 120px;
   padding: 40px;
   display:inline-block;
 }
@@ -55,6 +63,7 @@ h1,h2 {
   .game-options li {
     display: inline-block;
     margin: 0 10px;
+
   }
 
   .game-options button {
@@ -71,6 +80,47 @@ h1,h2 {
     padding:14px;
   }
 
+
+.give-up button{
+  background-color: rgba(255,0,51,1);
+  border: 1px solid #f03;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: PFDinTextCompProBold, Impact, Arial;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 30px auto;
+  padding:14px;
+
+}
+
+
+.done button{
+  background-color: rgba(255,0,51,1);
+  border: 1px solid #f03;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: PFDinTextCompProBold, Impact, Arial;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 30px auto;
+  padding:14px;
+
+}
+
   .game-options button:hover {
     background-color: rgba(255,0,51,0.8);
   }
+
+  div.highscore {
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #8AC007;
+}
