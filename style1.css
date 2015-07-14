@@ -1,3 +1,8 @@
+body  {
+    background-image: url("paper.gif");
+    background-color: #dddddd;
+}
+
 
 .questionSection{
   text-align: center;
@@ -30,7 +35,7 @@
   display:inline-block;
 }
 
-h1 {
+h1,h2 {
     font-family: fantasy;
 }
 
@@ -38,6 +43,7 @@ h1 {
   font-size: 20px;
   font-family: fantasy;
   text-align: center;
+  margin: 0 auto;
 }
 
 .game-options {
