@@ -1,5 +1,5 @@
 p {
-  color:blue;
+  color:grey;
   background-color: white;
   font-size: 1.5em;
   /*background-image: url("http://comps.canstockphoto.com/can-stock-photo_csp10031090.jpg");*/
@@ -20,18 +20,12 @@ p {
 }
 
 body  {
-
-    /*background-color: lightgrey;*/
-    /*border-color: lightblue;*/
     background-image: url("http://www.destination360.com/north-america/us/washington-dc/images/s/washington-dc.jpg");
-background-size: cover;
-
+    background-size: cover;
     background-repeat: no-repeat;
     border: 5px solid lightblue;
     border-radius: 25px;
-
-      margin: 0.25cm 1cm 1cm 1cm;
-
+    margin: 0.25cm 1cm 1cm 1cm;
 }
 
 
@@ -51,7 +45,7 @@ background-size: cover;
   border-radius: 120px;
     padding: 40px;
     display:inline-block;
-    color:blue;
+    color:red;
     font-size: 1.2em;
     opacity: 0.6;
     font-weight: bold;
@@ -168,7 +162,7 @@ img.presidentpic {
     background-color:white;
 
     border: 3px solid blue;
-    font-family: fantasy;
+    font-family: arial;
     text-align: center;
     border-radius: 10px;
     border="1" style="width:100%"
