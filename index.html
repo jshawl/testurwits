@@ -1,41 +1,183 @@
 
-<!DOCTYPE html>
-<html>
 <head>
-<title>WDI-6 Project 1 Test-Ur-Wits</title>
-  <link> </link>
+<title>US Presidential Trivia</title>
+
 
   <meta charset="utf-8">
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="script.js"></script>
 </head>
 
 
 <body>
-<h1>Welcome to Test-Ur-Wits!</h1>
-<h2>Enter your name to start playing</h2>
 
-<form>
-<input type ="text" name="username"> <br>
-<input type="submit" value="START!">
+<!-- <img src="http://www.starchamber.com/images//2013/08/mystery-pres.png"> -->
+
+
+
+
+<div id = "high_score">
+<input id ="answerFinal1" type="text" placeholder="Score ..." />
+</div>
+
+
+<ul class="game-options">
+    <img src="http://www.starchamber.com/images//2013/08/mystery-pres.png">
+    <!-- <img src="http://cdn3.historyextra.com/sites/default/files/imagecache/623px_wide/hrfiles/images/Presidents.jpg"> -->
+    <h2>Welcome to US Presidential Trivia!   Can you answer these in 2mins? </h2>
+    <li><button><a href="#questionID1" class="scroll">New Game</a></button></li><br>
+    <!-- <li><input id ="answerFinal1" type="text" placeholder="Your answer is ..." /></li> -->
+  </ul>
+
+
+<div class="questionSection">
+  <form  id ="questionID1">
+    <p>1.Who is the President of USA?</p>
+    <input  class ="qs"type="radio" name="qRadio1" value="Answer1">Barack Obama <br>
+    <input  class ="qs"type ="radio" name="qRadio1" value="Answer2">George Bush  <br>
+    <input  class ="qs"type ="radio" name="qRadio1" value="Answer3">Bill Clinton<br>
+    <input  class ="qs"type="radio" name="qRadio1" value="Answer4">Ronald Reagan<br>
+    <!-- <input id ="answerResult1" type="text" placeholder="Your answer is ..." /> -->
+    <!-- <input class="question1" type="submit" SUBMIT/> -->
+  </form>
+
+  <form id="questionID2">
+    <p>2. Who is the Governor of Virginia?</p>
+    <input type="radio" name="qRadio2" value="Answer1">Terry McAuliffe<br>
+    <input type ="radio" name="qRadio2" value"Answer2">Bob McDonnell<br>
+    <input  type ="radio" name="qRadio2" value="Answer3">Bill Clinton<br>
+    <input  type="radio" name="qRadio2" value="Answer4">Ronald Reagan<br>
+    <!-- <input id ="answerResult2" type="text" placeholder="Your answer is ..." /> -->
+    <!-- <input class="question2" type="submit" SUBMIT/> -->
+  </form>
+
+<form id="questionID3">
+<p>3. Who is the Governor of New York?</p>
+<input type="radio" name="qRadio3" value="Answer1">Terry McAuliffe<br>
+<input type ="radio" name="qRadio3" value"Answer2">Bob McDonnell<br>
+<input  type ="radio" name="qRadio3" value="Answer3">Bill Clinton<br>
+<input  type="radio" name="qRadio3" value="Answer4">Ronald Reagan<br>
+<input id ="answerResult3" type="text" placeholder="Your answer is ..." />
+<!-- <input class="question3" type="submit" SUBMIT/> -->
+
 </form>
 
+<form id="questionID4">
+<p>4. Who is the Governor of New York?</p>
+<input type="radio" name="qRadio4" value="Answer1">Terry McAuliffe<br>
+<input type ="radio" name="qRadio4" value"Answer2">Bob McDonnell<br>
+<input  type ="radio" name="qRadio4" value="Answer3">Bill Clinton<br>
+<input  type="radio" name="qRadio4" value="Answer4">Ronald Reagan<br>
+<input id ="answerResult4" type="text" placeholder="Your answer is ..." />
 
-<div>
-<a href="genre1.html"> US Presidential Trivia</a><br><br>
-<a href="genre2.html"> Popular Cinemas</a><br><br>
-<a href="genre3.html"> Missing TV titles</a><br><br>
-<!-- <a href="genre4.html"> GENRE4</a> -->
+</form>
 
+<form id="questionID5">
+<p>5. Who is the Governor of New York?</p>
+<input type="radio" name="qRadio5" value="Answer1">Terry McAuliffe<br>
+<input type ="radio" name="qRadio5" value"Answer2">Bob McDonnell<br>
+<input  type ="radio" name="qRadio5" value="Answer3">Bill Clinton<br>
+<input  type="radio" name="qRadio5" value="Answer4">Ronald Reagan<br>
+<input id ="answerResult5" type="text" placeholder="Your answer is ..." />
 
+</form>
+
+<form id="questionID6">
+<p>6. Who is the Governor of New York?</p>
+<input type="radio" name="qRadio6" class ="rtest1" value="Answer1">Terry McAuliffe<br>
+<input type ="radio" name="qRadio6" class ="rtest1" value"Answer2">Bob McDonnell<br>
+<input  type ="radio" name="qRadio6" class ="rtest1" value="Answer3">Bill Clinton<br>
+<input  type="radio" name="qRadio6" class ="rtest1" value="Answer4">Ronald Reagan<br>
+<input id ="answerResult6" type="text" placeholder="Your answer is ..." />
+
+</form>
+
+<form id="questionID7">
+<p>7. Who is the Governor of New York?</p>
+<input type="radio" name="qRadio7" value="Answer1">Terry McAuliffe<br>
+<input type ="radio" name="qRadio7" value"Answer2">Bob McDonnell<br>
+<input  type ="radio" name="qRadio7" value="Answer3">Bill Clinton<br>
+<input  type="radio" name="qRadio7" value="Answer4">Ronald Reagan<br>
+<input id ="answerResult7" type="text" placeholder="Your answer is ..." />
+
+</form>
+
+<form id="questionID8">
+<p>8. Who is the Governor of New York?</p>
+<input type="radio" name="qRadio8" value="Answer1">Terry McAuliffe<br>
+<input type ="radio" name="qRadio8" value"Answer2">Bob McDonnell<br>
+<input  type ="radio" name="qRadio8" value="Answer3">Bill Clinton<br>
+<input  type="radio" name="qRadio8" value="Answer4">Ronald Reagan<br>
+<input id ="answerResult8" type="text" placeholder="Your answer is ..." />
+
+</form>
+
+<form id="questionID9">
+<p>9. Who is the Governor of New York?</p>
+<input type="radio" name="qRadio9" value="Answer1">Terry McAuliffe<br>
+<input type ="radio" name="qRadio9" value"Answer2">Bob McDonnell<br>
+<input  type ="radio" name="qRadio9" value="Answer3">Bill Clinton<br>
+<input  type="radio" name="qRadio9" value="Answer4">Ronald Reagan<br>
+<input id ="answerResult9" type="text" placeholder="Your answer is ..." />
+
+</form>
+
+<form id="questionID10">
+<p>10. Who is the Governor of New York?</p>
+<input type="radio" name="qRadio10" value="Answer1">Terry McAuliffe<br>
+<input type ="radio" name="qRadio10" value"Answer2">Bob McDonnell<br>
+<input  type ="radio" name="qRadio10" value="Answer3">Bill Clinton<br>
+<input  type="radio" name="qRadio10" value="Answer4">Ronald Reagan<br>
+<input id ="answerResult10" type="text" placeholder="Your answer is ..." />
+
+</form>
 </div>
+
+<a href="Index.html"> HOME </a>
+
+<div class="done">
+<button class="donegame">Submit</button>
+</div>
+
+<div class="give-up">
+<button><a href="#questionID1" class="giveup">Give Up</button>
+</div>
+
+
+  <div class ="highscore">
+    <table id ="result">
+      <tr>
+        <th>Player Name</th>
+        <th>Score</th>
+      </tr>
+      <tr >
+        <td id="play1a"> </td>
+        <td id="play1b"> </td>
+      </tr>
+      <tr >
+        <td id="play2a"> </td>
+        <td id="play2b"> </td>
+      </tr>
+      <tr >
+        <td id="play3a"> </td>
+        <td id="play3b"> </td>
+      </tr>
+
+    </table>
+</div>
+
+<section id="diplayresult">
+
+</section>
+
 <!-- <p id="test">CSS is working</p> -->
 
-<p> Testing Jquery on Index.html</p>
 
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="script.js"></script> -->
+
+
+
 </body>
 
 
