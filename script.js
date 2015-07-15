@@ -6,6 +6,7 @@ var name =0;
 var counter=0;
 
 $(document).ready(function(){
+// $("#questionID1").hide();
 $("#questionID2").hide();
 $("#questionID3").hide();
 $("#questionID4").hide();
@@ -18,6 +19,7 @@ $("#questionID10").hide();
 });
 
 $(document).ready(function(){
+
 
     for (var i = 0; i< 1; i++){
         $("#play1a").append(localStorage.key(i));
@@ -79,8 +81,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#questionID3').on('click', function() {
-    var result =($('input[name=qRadio2]:checked', '#questionID3').val());
-    if(result=="Answer4"){
+    var result =($('input[name=qRadio3]:checked', '#questionID3').val());
+    if(result=="Answer1"){
     $("#answerResult3").val("Correct")
     score++;
     }
@@ -97,7 +99,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#questionID4').on('click', function() {
-    var result =($('input[name=qRadio2]:checked', '#questionID4').val());
+    var result =($('input[name=qRadio4]:checked', '#questionID4').val());
     if(result=="Answer4"){
     $("#answerResult4").val("Correct")
     score++;
@@ -115,8 +117,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#questionID5').on('click', function() {
-    var result =($('input[name=qRadio2]:checked', '#questionID5').val());
-    if(result=="Answer4"){
+    var result =($('input[name=qRadio5]:checked', '#questionID5').val());
+    if(result=="Answer3"){
     $("#answerResult5").val("Correct")
     score++;
     }
@@ -133,7 +135,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#questionID6').on('click', function() {
-    var result =($('input[name=qRadio2]:checked', '#questionID6').val());
+    var result =($('input[name=qRadio6]:checked', '#questionID6').val());
     if(result=="Answer4"){
     $("#answerResult6").val("Correct")
     score++;
@@ -152,8 +154,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#questionID7').on('click', function() {
-    var result =($('input[name=qRadio2]:checked', '#questionID7').val());
-    if(result=="Answer4"){
+    var result =($('input[name=qRadio7]:checked', '#questionID7').val());
+    if(result=="Answer1"){
     $("#answerResult7").val("Correct")
     score++;
     }
@@ -170,8 +172,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#questionID8').on('click', function() {
-    var result =($('input[name=qRadio2]:checked', '#questionID8').val());
-    if(result=="Answer4"){
+    var result =($('input[name=qRadio8]:checked', '#questionID8').val());
+    if(result=="Answer1"){
     $("#answerResult8").val("Correct")
     score++;
     }
@@ -188,8 +190,8 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('#questionID9').on('click', function() {
-    var result =($('input[name=qRadio2]:checked', '#questionID9').val());
-    if(result=="Answer4"){
+    var result =($('input[name=qRadio9]:checked', '#questionID9').val());
+    if(result=="Answer1"){
     $("#answerResult9").val("Correct")
     score++;
     }
@@ -203,12 +205,32 @@ $(document).ready(function(){
     });
 
 });
+$(document).ready(function(){
+    $('#questionID10').on('click', function() {
+    var result =($('input[name=qRadio10]:checked', '#questionID10').val());
+    if(result=="Answer3"){
+    $("#answerResult10").val("Correct")
+    score++;
+    }
+    else {
+    $("#answerResult10").val("Incorrect")
+    }
+    $("#answerFinal1").val("Your score is:" +score)
+   question ++;
+   $("#questionID10").hide();
+  //  $('#questionID10').replaceWith($(this).next('#questionID10'));
+    });
+
+});
 
 $(document).ready(function(){
 $(".scroll").click(function(event){
+  var score =0;
+  $("#answerFinal1").val("Your score is:" +score)
    name = prompt("Enter name")
    event.preventDefault();
    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+     $("#questionID1").show();
 
  });
 
@@ -241,6 +263,12 @@ $('.giveup').on('click', function(event) {
 $('.donegame').on('click', function() {
 
   localStorage.setItem(name, score);
+
+});
+
+$('#resetLocal').on('click', function() {
+
+  localStorage.clear();
 
 });
 });
