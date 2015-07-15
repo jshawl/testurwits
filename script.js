@@ -35,39 +35,14 @@ $(document).ready(function(){
       console.log(localStorage.getItem(localStorage.key(i)));
       }
 });
-// //JS function:*********
-// function questionFunction(qRadio1,"questionID1","Answer2","#answerResult1","#answerFinal1","#questionID2") {
-//
-//
-//     var result =($('input[name=qRadio1]:checked', '#questionID1').val());
-//     if(result=="Answer2"){
-//      $("#answerResult1").val("Correct")
-//      score ++;
-//      }
-//      else {
-//      $("#answerResult1").val("Incorrect")
-//       }
-//       $("#answerFinal1").val("Your score is:" +score)
-//
-//      question ++;
-//    //$("#div5").delay(4000).fadeIn();
-//      // $("#questionID2").show();
-//      $('#questionID2').fadeIn("slow");
-//      $('#questionID1').replaceWith($(this).next('#questionID2'));
-//
-//
-// }
-//
-// $(document).ready(function(){
-//    $('#questionID1').on('click', function questionFunction(qRadio1,"questionID1","Answer2","#answerResult1","#answerFinal1","#questionID2") {
-// });
-// //**********
+
 $(document).ready(function(){
    $('#questionID1').on('click', function() {
    var result =($('input[name=qRadio1]:checked', '#questionID1').val());
-   if(result=="Answer2"){
+    if(result=="Answer2"){
     $("#answerResult1").val("Correct")
     score ++;
+
     }
     else {
     $("#answerResult1").val("Incorrect")
