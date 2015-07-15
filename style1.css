@@ -1,8 +1,25 @@
+#high_score{
+
+  position:fixed;
+
+  top: 200px;
+  right: 50px;
+
+  border: 3px solid blue;
+  font-family: fantasy;
+  text-align: center;
+
+}
+
 body  {
 
-    /*background-color: #3D2A26;*/
-    border-color: lightblue;
-    border: 5px solid red;
+    /*background-color: lightgrey;*/
+    /*border-color: lightblue;*/
+    background-image: url("http://www.destination360.com/north-america/us/washington-dc/images/s/washington-dc.jpg");
+background-size: cover;
+
+    background-repeat: no-repeat;
+    border: 5px solid lightblue;
     border-radius: 25px;
 
       margin: 0.25cm 1cm 1cm 1cm;
@@ -15,17 +32,21 @@ body  {
     margin:  0 auto;
 }
 #questionID1, #questionID3, #questionID5,#questionID7, #questionID9{
-  /*background-color: yellow;*/
+  background-color: lightblue;
   border: 3px solid lightgreen;
   font-family: fantasy;
   text-align: center;
-  width: 250px;
-  height: 12em;
+  width: 550px;
+  height: 15em;
   margin:  0 auto;
   margin-bottom: 0.5cm;
   border-radius: 120px;
     padding: 40px;
     display:inline-block;
+    color:blue;
+    font-size: 1.2em;
+    opacity: 0.6;
+    font-weight: bold;
 }
 
 
@@ -34,8 +55,8 @@ body  {
     border: 3px solid lightblue;
   font-family: fantasy;
   text-align: center;
-  width: 250px;
-  height: 12em;
+  width: 550px;
+  height: 15em;
   margin: 0 auto;
   margin-bottom: 0.5cm;
   border-radius: 120px;
@@ -67,10 +88,10 @@ h1,h2 {
   }
 
   .game-options button {
-    background-color: rgba(255,0,51,1);
-    border: 1px solid #f03;
+    /*background-color: rgba(255,0,51,1);*/
+    /*border: 1px solid #f03;*/
     border-radius: 10px;
-    color: white;
+    /*color: white;*/
     cursor: pointer;
     display: block;
     font-family: PFDinTextCompProBold, Impact, Arial;
@@ -82,10 +103,10 @@ h1,h2 {
 
 
 .give-up button{
-  background-color: rgba(255,0,51,1);
-  border: 1px solid #f03;
+  /*background-color: rgba(255,0,51,1);*/
+  /*border: 1px solid #f03;*/
   border-radius: 10px;
-  color: white;
+  /*color: white;*/
   cursor: pointer;
   display: block;
   font-family: PFDinTextCompProBold, Impact, Arial;
@@ -98,10 +119,10 @@ h1,h2 {
 
 
 .done button{
-  background-color: rgba(255,0,51,1);
-  border: 1px solid #f03;
+  /*background-color: rgba(255,0,51,1);*/
+  /*border: 1px solid #f03;*/
   border-radius: 10px;
-  color: white;
+  /*color: white;*/
   cursor: pointer;
   display: block;
   font-family: PFDinTextCompProBold, Impact, Arial;
