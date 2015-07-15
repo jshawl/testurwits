@@ -35,9 +35,33 @@ $(document).ready(function(){
       console.log(localStorage.getItem(localStorage.key(i)));
       }
 });
-
-
-
+// //JS function:*********
+// function questionFunction(qRadio1,"questionID1","Answer2","#answerResult1","#answerFinal1","#questionID2") {
+//
+//
+//     var result =($('input[name=qRadio1]:checked', '#questionID1').val());
+//     if(result=="Answer2"){
+//      $("#answerResult1").val("Correct")
+//      score ++;
+//      }
+//      else {
+//      $("#answerResult1").val("Incorrect")
+//       }
+//       $("#answerFinal1").val("Your score is:" +score)
+//
+//      question ++;
+//    //$("#div5").delay(4000).fadeIn();
+//      // $("#questionID2").show();
+//      $('#questionID2').fadeIn("slow");
+//      $('#questionID1').replaceWith($(this).next('#questionID2'));
+//
+//
+// }
+//
+// $(document).ready(function(){
+//    $('#questionID1').on('click', function questionFunction(qRadio1,"questionID1","Answer2","#answerResult1","#answerFinal1","#questionID2") {
+// });
+// //**********
 $(document).ready(function(){
    $('#questionID1').on('click', function() {
    var result =($('input[name=qRadio1]:checked', '#questionID1').val());
@@ -248,17 +272,17 @@ $('.giveup').on('click', function(event) {
   $("#questionID9").show();
   $("#questionID10").show();
 
-  $("#answerResult1").val("Correct Answer!!")
-  $("#answerResult2").val("Correct Answer!!")
+  $("#answerResult1").val("Franklin D. Roosevelt")
+  $("#answerResult2").val("Grover Cleveland")
 
-  $("#answerResult3").val("Correct Answer!!")
-  $("#answerResult4").val("Correct Answer!!")
-  $("#answerResult5").val("Correct Answer!!")
-  $("#answerResult6").val("Correct Answer!!")
-  $("#answerResult7").val("Correct Answer!!")
-  $("#answerResult8").val("Correct Answer!!")
-  $("#answerResult9").val("Correct Answer!!")
-  $("#answerResult10").val("Correct Answer!!")
+  $("#answerResult3").val("Ronald Reagan")
+  $("#answerResult4").val("John Adams")
+  $("#answerResult5").val("Andrew Johnson")
+  $("#answerResult6").val("Franklin D. Roosevelt")
+  $("#answerResult7").val("Andrew Johnson")
+  $("#answerResult8").val("George Washington")
+  $("#answerResult9").val("Federal Hall in New York")
+  $("#answerResult10").val("Abraham Lincoln")
 });
 
 $('.donegame').on('click', function() {

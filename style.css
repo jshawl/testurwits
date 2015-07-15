@@ -1,6 +1,7 @@
-h2{
+p {
   color:blue;
   background-color: white;
+  font-size: 1.5em;
   /*background-image: url("http://comps.canstockphoto.com/can-stock-photo_csp10031090.jpg");*/
 
 }
@@ -75,18 +76,24 @@ h1,h2 {
     font-family: fantasy;
 }
 
-#answerFinal1, #answerResult1, #answerResult2{
+#answerFinal1, #answerResult1, #answerResult2, #answerResult3, #answerResult4, #answerResult5, #answerResult6, #answerResult7, #answerResult8,#answerResult9,#answerResult10{
   font-size: 20px;
   font-family: fantasy;
   text-align: center;
   margin: 0 auto;
 }
 
+img.presidentpic {
+
+  margin: 40px 0;
+
+}
 .game-options {
   list-style: none;
   margin: 30px 0;
   text-align: center;
 }
+
 
   .game-options li {
     display: inline-block;
@@ -142,6 +149,12 @@ h1,h2 {
 
   .game-options button:hover {
     background-color: rgba(255,0,51,0.8);
+  }
+
+  div.reset1{
+    position:fixed;
+    top:120px;
+
   }
 
   div.highscore {
