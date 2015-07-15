@@ -34,8 +34,8 @@ body  {
     margin:  0 auto;
 }
 #questionID1, #questionID3, #questionID5,#questionID7, #questionID9, #questionID2, #questionID4,#questionID6,#questionID8, #questionID10{
-  background-color: lightblue;
-  border: 3px solid lightgreen;
+  background-color: lightgrey;
+  border: 3px;
   font-family: fantasy;
   text-align: center;
   width: 550px;
@@ -45,7 +45,7 @@ body  {
   border-radius: 120px;
     padding: 40px;
     display:inline-block;
-    color:red;
+    color:blue;
     font-size: 1.2em;
     opacity: 0.6;
     font-weight: bold;
@@ -159,9 +159,9 @@ img.presidentpic {
     height: 100px
     color:black;
     top: 40px;
-    background-color:white;
+    background-color:lightgrey;
 
-    border: 3px solid blue;
+    border: 3px;
     font-family: arial;
     text-align: center;
     border-radius: 10px;
