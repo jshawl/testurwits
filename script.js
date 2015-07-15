@@ -51,8 +51,11 @@ $(document).ready(function(){
      $("#answerFinal1").val("Your score is:" +score)
 
     question ++;
-    $("#questionID2").show();
+  //$("#div5").delay(4000).fadeIn();
+    // $("#questionID2").show();
+    $('#questionID2').fadeIn("slow");
     $('#questionID1').replaceWith($(this).next('#questionID2'));
+
     });
 
 });
@@ -71,7 +74,7 @@ $(document).ready(function(){
     }
     $("#answerFinal1").val("Your score is:" +score)
    question ++;
-     $("#questionID3").show();
+     $('#questionID3').fadeIn("slow");
    $('#questionID2').replaceWith($(this).next('#questionID3'));
     });
 
@@ -89,7 +92,7 @@ $(document).ready(function(){
     }
     $("#answerFinal1").val("Your score is:" +score)
    question ++;
-    $("#questionID4").show();
+  $('#questionID4').fadeIn("slow");
    $('#questionID3').replaceWith($(this).next('#questionID4'));
     });
 
@@ -107,7 +110,7 @@ $(document).ready(function(){
     }
     $("#answerFinal1").val("Your score is:" +score)
    question ++;
-    $("#questionID5").show();
+    $('#questionID5').fadeIn("slow");
    $('#questionID4').replaceWith($(this).next('#questionID5'));
     });
 
@@ -125,7 +128,7 @@ $(document).ready(function(){
     }
     $("#answerFinal1").val("Your score is:" +score)
    question ++;
-    $("#questionID6").show();
+    $('#questionID6').fadeIn("slow");
    $('#questionID5').replaceWith($(this).next('#questionID6'));
     });
 
@@ -143,7 +146,7 @@ $(document).ready(function(){
     }
     $("#answerFinal1").val("Your score is:" +score)
    question ++;
-    $("#questionID7").show();
+  $('#questionID7').fadeIn("slow");
    $('#questionID6').replaceWith($(this).next('#questionID7'));
     });
 
@@ -162,7 +165,7 @@ $(document).ready(function(){
     }
     $("#answerFinal1").val("Your score is:" +score)
    question ++;
-    $("#questionID8").show();
+  $('#questionID8').fadeIn("slow");
    $('#questionID7').replaceWith($(this).next('#questionID8'));
     });
 
@@ -180,7 +183,7 @@ $(document).ready(function(){
     }
     $("#answerFinal1").val("Your score is:" +score)
    question ++;
-    $("#questionID9").show();
+  $('#questionID9').fadeIn("slow");
    $('#questionID8').replaceWith($(this).next('#questionID9'));
     });
 
@@ -198,7 +201,7 @@ $(document).ready(function(){
     }
     $("#answerFinal1").val("Your score is:" +score)
    question ++;
-    $("#questionID10").show();
+    $('#questionID10').fadeIn("slow");
    $('#questionID9').replaceWith($(this).next('#questionID10'));
     });
 
