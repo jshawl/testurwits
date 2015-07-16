@@ -16,6 +16,8 @@ $("#questionID7").hide();
 $("#questionID8").hide();
 $("#questionID9").hide();
 $("#questionID10").hide();
+// or maybe $("form").hide()
+
 });
 
 $(document).ready(function(){
@@ -36,6 +38,7 @@ $(document).ready(function(){
       console.log(localStorage.key(i));
       console.log(localStorage.getItem(localStorage.key(i)));
       }
+      // im confused by the 1 and 5 limits above. what do those numbers represent?
 });
 
 
@@ -45,6 +48,8 @@ $(document).ready(function(){
    var result =($('input[name=qRadio1]:checked', '#questionID1').val());
    if(result=="Answer2"){
     $("#answerResult1").val("Correct")
+    // this code is very tightly coupled to your HTML. Can you think of a way to encode
+    // which answer is the right one without hard coding the answers here in your JS?
     score ++;
     }
     else {
@@ -54,7 +59,7 @@ $(document).ready(function(){
 
     question ++;
     $("#questionID2").show();
-    $('#questionID1').replaceWith($(this).next('#questionID2'));
+    $('#questionID1').replaceWith($(this).next('#questionID2')); // excellent use of `.replaceWith`!
     });
 
 });
@@ -62,6 +67,10 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
+    // the below code is nearly identical to the above function.
+    // Please avoid copying and pasting (including indentation errors)
+    // and try thinking of a way to DRY up your code.
+    // Using $(this) should help immensely!
     $('#questionID2').on('click', function() {
     var result =($('input[name=qRadio2]:checked', '#questionID2').val());
     if(result=="Answer1"){
@@ -230,6 +239,7 @@ $(".scroll").click(function(event){
    name = prompt("Enter name")
    event.preventDefault();
    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+   // nice use of animate!
      $("#questionID1").show();
 
  });
@@ -272,3 +282,9 @@ $('#resetLocal').on('click', function() {
 
 });
 });
+
+// Overall, I am happy that you got your project to work.
+// I would like to see you DRY up your code and avoid the temptation to
+// copy and paste a solution and look for ways to share functionality.
+// Also, I recommend using variables to avoid querying the DOM over and over
+// with the same selectors.

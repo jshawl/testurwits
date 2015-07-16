@@ -24,13 +24,14 @@ body  {
     /*background-color: lightgrey;*/
     /*border-color: lightblue;*/
     background-image: url("http://www.destination360.com/north-america/us/washington-dc/images/s/washington-dc.jpg");
+    /* remember to download external images to prevent 404 errors in the future! */
 background-size: cover;
 
     background-repeat: no-repeat;
     border: 5px solid lightblue;
     border-radius: 25px;
 
-      margin: 0.25cm 1cm 1cm 1cm;
+      margin: 0.25cm 1cm 1cm 1cm; /*This works! but cm is hardly ever used as a unit of measurement in css.*/
 
 }
 
@@ -40,6 +41,7 @@ background-size: cover;
     margin:  0 auto;
 }
 #questionID1, #questionID3, #questionID5,#questionID7, #questionID9, #questionID2, #questionID4,#questionID6,#questionID8, #questionID10{
+  /* You could also use a class to avoid having to list each of the ID's */
   background-color: lightblue;
   border: 3px solid lightgreen;
   font-family: fantasy;
@@ -72,8 +74,10 @@ background-size: cover;
   display:inline-block;
 }*/
 
+/* The above code causes a CSS syntax error */
+
 h1,h2 {
-    font-family: fantasy;
+    font-family: fantasy; 
 }
 
 #answerFinal1, #answerResult1, #answerResult2{
@@ -97,12 +101,13 @@ h1,h2 {
 
   .game-options button {
     /*background-color: rgba(255,0,51,1);*/
+    /* Please remove commented out code before submitting in the future. */
     /*border: 1px solid #f03;*/
     border-radius: 10px;
     /*color: white;*/
     cursor: pointer;
     display: block;
-    font-family: PFDinTextCompProBold, Impact, Arial;
+    font-family: PFDinTextCompProBold, Impact, Arial; /* remember to add a fallback like sans-serif incase none of these fonts are available*/
     font-size: 40px;
     letter-spacing: 2px;
     margin: 30px auto;
@@ -159,6 +164,7 @@ h1,h2 {
     font-family: fantasy;
     text-align: center;
     border-radius: 10px;
+    /* the below looks like html! */
     border="1" style="width:100%"
 
 
